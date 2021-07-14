@@ -8,14 +8,20 @@
       <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
    </head>
    <body>
-    <content class="startContainer">
+    <content>
          <h1>Cooking Quiz Challenge</h1>
          <p>Try to answer the following cooking-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!</p>
          <br><button id= "startButton" class="start"> START QUIZ</button>
-        </div>
+         <span id="count">45</span>
+         <div id="question"></div>
+         <br><button id= "nextQuestion" class="next">Next Question</button>
+         <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+            type="submit" value="Submit" />
+            <!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+      </div>      </div>
     </content>
-    <span id="count">45</span>
-    <div id="questions">
       <script src='assets\js\script.js'></script>
    </body>
 </html>

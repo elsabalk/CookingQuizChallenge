@@ -5,23 +5,53 @@
       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
       <title>Cooking Quiz Challenge</title>
       <meta name='viewport' content='width=device-width, initial-scale=1'>
-      <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+      <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
    </head>
    <body>
-    <content>
-         <h1>Cooking Quiz Challenge</h1>
-         <p>Try to answer the following cooking-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!</p>
-         <br><button id= "startButton" class="start"> START QUIZ</button>
-         <span id="count">45</span>
+      <content>
+         <div>
+            <h1>Cooking Quiz Challenge</h1>
+         </div>
+
+         <div>
+            <p class="blocktext">
+               Try to answer the following cooking-related questions 
+               within the time limit. Keep in mind that incorrect 
+               answers will penalize your scoretime by ten seconds!
+               </p>
+         </div>
+
+         <br>
+
+         <div>
+            <button id= "startButton" class="start"> START QUIZ</button>
+         </div>
+
+         <div class="upperCorner">
+            <span id="count">45</span>
+         </div>
+
          <div id="question"></div>
-         <br><button id= "nextQuestion" class="next">Next Question</button>
+
+         <br>
+
+         <div>
+            <button id= "nextQuestion" class="next">Next Question</button>
+         </div>
+
+         <br>
+
          <div class="submitter">
             <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
-            type="submit" value="Submit" />
-            <!--show only wrong answers on submit-->
-    <div class="quizAnswers" id="correctAnswer1"></div>
-      </div>      </div>
-    </content>
-      <script src='assets\js\script.js'></script>
+                        type="submit" value="Submit" />
+         </div>
+
+         <!--show only wrong answers on submit-->
+         
+         <div class="quizAnswers" id="correctAnswer1"></div>
+
+      </content>
+
+   <script src='./assets/js/script.js'></script>
    </body>
 </html>
